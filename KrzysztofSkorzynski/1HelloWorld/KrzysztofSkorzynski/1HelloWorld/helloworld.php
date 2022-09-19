@@ -19,13 +19,34 @@
     define("CONSTANT", "STAŁA"); #deklaracja stałej
     echo(CONSTANT);
 
-    if ($nazwa == CONSTANT) {
-        print("Warunek prawdziwy");
+    $conn = new mysqli('localhost', 'root', '');
+
+    if ($conn -> connect_error) {
+        echo("Connect error");
+    } else {
+        echo("Connect succes");
     }
-    else {
-        print("Warunek nieprawdziwy");
+    $sql = "SELECT * FROM users;";
+    $array = array(1, 5, 2);
+    sort($array);
+
+    for ($i=0; $i < ob_get_length($array); $i++) { 
+        echo($array[$i]);
     }
+    $ocena = 5;
     
+    round($ocena, 2);
+
+    switch ($ocena) {
+        case "":
+            echo("0-50");
+            break;
+        case 2:
+            break;
+        default:
+            # code...
+            break;
+    }
     ?>
 </body>
 </html>
