@@ -1,0 +1,201 @@
+<?php
+
+echo("Tekst<br>");
+echo "Tekst2<br>";
+print("Tekst3<br>");
+
+//komentarz 1 liniowy
+
+#komentarz 1 liniowy
+
+/*
+    komentarz wieloliniowy
+*/
+/*
+$NazwaZmiennej=12314214;
+$b="tekst5";
+echo($NazwaZmiennej." ".$b."<br>");
+define("c","tekst6<br>");
+echo(c);
+*/
+
+$liczba1=5;
+
+print("<br><b>Zadanie 1 </b><br>");
+if ($liczba1>0)
+{
+    print("dodatnia");
+}
+else if ($liczba1==0)
+{
+    print("Liczba to 0");
+}
+else
+{
+    print("liczba jest ujemna");
+}
+print("<br><b>Zadanie 2</b><br>");
+$liczba2=6;
+
+
+if (($liczba2%2)==0)
+{
+    print("parzysta");
+}
+else
+{
+    print("nieparzysta");
+}
+
+print("<br><b>Zadanie 5</b><br>");
+$a=15;
+$b=10;
+$c=20;
+
+if (($a<$b)&&($a<$c)&&($b<$c))
+{
+    print($a." ".$b." ".$c);
+}
+else if (($a>$b)&&($b<$c)&&($a>$c))
+{
+    print($b." ".$c." ".$a);
+}
+else if (($c<$b)&&($c<$a)&&($b>$a))
+{
+    print($c." ".$a." ".$b);
+}
+else if (($a>$b)&&($b>$c)&&($a>$c))
+{
+    print($c." ".$b." ".$a);
+}
+else if (($c<$a)&&($b<$c)&&($a>$b))
+{
+    print($b." ".$a." ".$c);
+}
+else if (($a<$b)&&($a<$c)&&($b>$c))
+{
+    print($a." ".$c." ".$b);
+}
+else
+{
+    print($b." ".$a." ".$c);
+}
+
+print("<br><br><b>Zadanie 1 instrukcje sterujące</b><br>");
+$ocena=4;
+switch ($ocena)
+		{
+			case 1:
+			{
+				print	("0-50%");
+				break;
+			}
+
+			case 2:
+			{
+				print	("51-60%");
+				break;
+			}
+			
+			case 3:
+			{
+				print	("61-69%");
+				break;
+			}
+			
+			case 4:
+			{
+				print	("70-84%");
+				break;
+			}
+			
+			case 5:
+			{
+				print	("85-94%");
+				break;
+			}
+			
+			case 6:
+			{
+				print	("95-100%");
+				break;
+			}
+			default: print("Nie ma takiej oceny");
+		}
+
+        print("<br><br><b>Zadanie 2 instrukcje sterujące</b><br>");
+        $dzien="Niedziela";
+        switch ($dzien)
+		{
+			case "Poniedziałek":
+			{
+				print	("Dzień roboczy.");
+				break;
+			}
+
+			case "Wtorek":
+			{
+				print	("Dzień roboczy.");
+				break;
+			}
+			
+			case "Środa":
+			{
+				print	("Dzień roboczy.");
+				break;
+			}
+			
+			case "Czwartek":
+			{
+				print	("Dzień roboczy.");
+				break;
+			}
+			
+			case "Piątek":
+			{
+				print	("Dzień roboczy.");
+				break;
+			}
+			
+			case "Sobota":
+			{
+				print	("Weekend");
+				break;
+			}
+			
+			case "Niedziela":
+			{
+				print	("Weekend");
+				break;
+			}
+			default: print("Nie ma takiego dnia.");
+		}
+
+        print("<br><br><b>Zadanie 3 instrukcje sterujące</b><br>");
+
+        $waluta="Funty";
+		$kwota=14;
+		switch ($waluta)
+		{
+			case "Euro":
+			{
+				print	(round($kwota/4.71, 2));
+				break;
+			}
+
+			case "Funty":
+			{
+				print	(round($kwota/5.36, 2));
+				break;
+			}
+			
+			case "Dolary":
+			{
+				print	(round($kwota/4.71, 2));
+				break;
+			}
+			default: print("Nie ma takiej waluty.");
+		}
+
+        
+?>
